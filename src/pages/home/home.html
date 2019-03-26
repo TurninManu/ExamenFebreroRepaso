@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="formulario">
+    <ion-item>
+      <ion-label floating>Usuario</ion-label>
+      <ion-input type="text" formControlName="usuario" value="afilyukov0"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="text" formControlName="contrasenna" value="VlRwgWEi97c"></ion-input>
+    </ion-item>
+
+    <button ion-button  [disabled]="!formulario.valid" (click)="abrirV2()">Login</button>
+  </form>
+
+</ion-content>
