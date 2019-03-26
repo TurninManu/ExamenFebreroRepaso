@@ -20,7 +20,6 @@ export class Pagina2Page {
 
   usuario:Usuario;
   asignaturaSelec:Asignatura;
-  notas:Array<Nota>
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.usuario=navParams.get("usuario");
@@ -32,7 +31,6 @@ export class Pagina2Page {
 
   public verNota(asig:Asignatura){
     this.asignaturaSelec=asig;
-    this.notas=this.asignaturaSelec.notas;
   }
 
 }
